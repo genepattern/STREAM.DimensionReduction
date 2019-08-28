@@ -166,7 +166,7 @@ p10_value=
 
 p11_MODE=
 p11_TYPE=CHOICE
-p11_default_value=<output.filename>_dimensionreduction.pdf
+p11_default_value=<output.filename>_dimensionreduction.png
 p11_description=If saving the figure, the name for the pdf output
 p11_fileFormat=
 p11_flag=
