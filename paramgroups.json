@@ -1,0 +1,12 @@
+[
+{"name": "Inputs and Outputs", 
+  "parameters": ["data.file", "output.filename"]},
+{"name": "Dimension reduction", "hidden": false,
+  "parameters": ["percent.neighbor.cells", "num.components.to.keep","feature", "method" ]},
+
+{"name": "Plotting", "hidden": false,
+  "parameters": ["num.components.to.plot","component.x", "component.y","figure.name", "figure.width", "figure.height", "figure.legend.num.columns"]}
+
+]
+
+
