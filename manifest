@@ -6,7 +6,7 @@ LSID=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00397:99
 author=Ted Liefeld, UCSD School of Medicine.
 categories=SingleCell
 
-commandLine=python /stream/dimred_command_line.py -m <data.file> -of <output.filename> <percent.neighbor.cells> <num.components.to.keep> <feature>  <method> <num.components.to.plot> <component.x> <component.y> <figure.width> <figure.height> <figure.name> <figure.legend.num.columns>  -n_jobs <job.cpuCount>
+commandLine=python /stream/dimred_command_line.py -m <data.file> -of <output.filename> <percent.neighbor.cells> <num.components.to.keep> <feature>  <method> <num.components.to.plot> <component.x> <component.y> <figure.width> <figure.height>  <figure.legend.num.columns>  -n_jobs <job.cpuCount>
 
 
 
@@ -165,46 +165,32 @@ p10_type=java.lang.String
 p10_value=
 
 p11_MODE=
-p11_TYPE=CHOICE
-p11_default_value=<output.filename>_dimensionreduction.png
-p11_description=If saving the figure, the name for the pdf output
+p11_TYPE=TEXT
+p11_default_value=3
+p11_description=The number of columns that the legend has.
 p11_fileFormat=
 p11_flag=
-p11_name=figure.name
+p11_name=figure.legend.num.columns
 p11_numValues=1..1
 p11_optional=
 p11_prefix=
-p11_prefix_when_specified=-fig_name   
+p11_prefix_when_specified=-fig_legend_ncol  
 p11_type=java.lang.String
 p11_value=
 
 p12_MODE=
 p12_TYPE=TEXT
-p12_default_value=3
-p12_description=The number of columns that the legend has.
+p12_default_value=8
+p12_description=figure height
 p12_fileFormat=
 p12_flag=
-p12_name=figure.legend.num.columns
-p12_numValues=1..1
-p12_optional=
+p12_name=figure.height
+p12_numValues=0..1
+p12_optional=on
 p12_prefix=
-p12_prefix_when_specified=-fig_legend_ncol  
+p12_prefix_when_specified=-fig_height  
 p12_type=java.lang.String
 p12_value=
-
-p13_MODE=
-p13_TYPE=TEXT
-p13_default_value=8
-p13_description=figure height
-p13_fileFormat=
-p13_flag=
-p13_name=figure.height
-p13_numValues=0..1
-p13_optional=on
-p13_prefix=
-p13_prefix_when_specified=-fig_height  
-p13_type=java.lang.String
-p13_value=
 
 
 privacy=public

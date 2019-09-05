@@ -58,7 +58,6 @@ def main():
     parser.add_argument("-fig_height",dest="fig_height", type=int, default=8, help="")
     parser.add_argument("-n_jobs",dest="n_jobs", type=int, default=2,  help="")
     
-    parser.add_argument("-fig_name",dest="fig_name",  default=None, help="")                                   
     parser.add_argument("-fig_legend_ncol",dest="fig_legend_ncol", type=int, default=None, help="")                                   
 
 
@@ -75,7 +74,7 @@ def main():
 
     fig_size=(args.fig_width, args.fig_height)
     st.plot_dimension_reduction(adata, n_components=args.nc_plot, comp1=args.comp1, comp2=args.comp2, save_fig=True, 
-                            fig_name=args.fig_name,
+                            fig_name=(args.output_filename_prefix + '_stddev_dotplot.png'),
                             fig_path="./",fig_size=fig_size,fig_legend_ncol=args.fig_legend_ncol)
 
 
