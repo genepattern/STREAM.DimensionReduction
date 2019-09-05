@@ -1,0 +1,20 @@
+#
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="beta.genepattern.org" -Dgp.url="https://beta.genepattern.org" -Dgp.user="ted-dev" -Dgp.password="" -Dgpunit.testfolder=`pwd` gpunit
+#
+name: STREAM.DimensionReduction
+module: STREAM.DimensionReduction
+params: 
+    "data.file": "./data/bar_stream_result.pkl" 
+    "output.filename": "test"
+    "percent.neighbor.cells": "0.1"
+    "num.components.to.keep": "3"
+    "feature": "var_genes"
+    "method": "mlle"
+    "num.components.to.plot": "3"
+    "component.x": "0"
+    "component.y": "1"
+assertions:
+    jobStatus: success
+    files:
+        "test_stream_result.pkl":  !!null
+
