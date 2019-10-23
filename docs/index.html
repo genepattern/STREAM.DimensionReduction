@@ -48,13 +48,17 @@
 
 <p>STREAM.DimensionReduction is used to reduce the dimensionality of the dataset to be used in the downstream analysis.</p>
 
-<p><h5>Huidong to add detail explaining this part of the STREAM pipeline</h5></p>
-
 <p>&nbsp;</p>
 
 <h2>Algorithm</h2>
 <p>
-<h5>Huidong to cover details of this portion of the analysis</h5>
+Each cell can be thought as a vector in a multi-dimensional vector space in which each component is the expression level of a gene. Typically, even after feature selection, each cell still has hundreds of components, making it difficult to reliably assess similarity or distances between cells, a problem often referred as the curse of dimensionality. To mitigate this problem, starting from the genes selected in the previous step we project cells to a lower dimensional space using a non-linear dimensionality reduction method called Modified Locally Linear Embedding (MLLE).
+</p><p>
+Several alternative dimension reduction methods are also supported, spectral embedding, umap, pca. By default, this module uses MLLE.
+</p><p>
+For large datasets, spectral embedding works faster than MLLE while preserving a similar compact structure to MLLE. For large datasets, lowering the percent neighbor cells parameter (0.1 by default) will speed up this step.
+</p><p>
+By default we set the number of components to keep to 3.  For biological process with simple bifurcation or linear trajectory, keeping only two components would be recommended.
 </p>
 
 <h2>References</h2>
