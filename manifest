@@ -11,7 +11,7 @@ commandLine=python /stream/dimred_command_line.py -m <data.file> -of <output.fil
 
 
 cpuType=any
-description=Perform dimension reduction on the dataset.
+description=Perform dimension reduction on the dataset to make it easier to reliably assess similarity or distances between cells. Starting from the genes selected in the STREAM.FeatureSelection module, we project cells to a lower dimensional space using a non-linear dimensionality reduction method
 fileFormat=pkl
 language=any
 minGenePatternVersion=3.9.13
