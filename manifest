@@ -4,7 +4,6 @@
 JVMLevel=
 LSID=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00397:9999999
 author=Ted Liefeld, UCSD School of Medicine.
-categories=SingleCell
 
 commandLine=python /stream/dimred_command_line.py -m <data.file> -of <output.filename> <percent.neighbor.cells> <num.components.to.keep> <feature>  <method> <num.components.to.plot> <component.x> <component.y> <figure.width> <figure.height>  <figure.legend.num.columns>  -n_jobs <job.cpuCount>
 cpuType=any
@@ -196,6 +195,8 @@ quality=beta
 requiredPatchLSIDs=
 requiredPatchURLs=
 taskDoc=doc.html
-taskType=ScRnaSeq
 userid=ted
 version=inital revision
+categories=Single-Cell; RNA-Seq
+taskType=Single-cell
+
