@@ -76,7 +76,7 @@ p4_value=
 
 p5_MODE=
 p5_TYPE=CHOICE
-p5_default_value=
+p5_default_value=var_genes
 p5_description=Feature used for dimension reduction. Choose from ['var_genes','top_pcs','all']. 'var_genes': most variable genes. 'top_pcs': top principal components.  'all': all genes
 p5_fileFormat=
 p5_flag=
@@ -90,7 +90,7 @@ p5_value=var_genes\=most variable genes;top_pcs\=top principal components;all\=a
 
 p6_MODE=
 p6_TYPE=CHOICE
-p6_default_value=
+p6_default_value=mlle
 p6_description=Method used for dimension reduction.Choose from {{'mlle','umap','pca'}}
 p6_fileFormat=
 p6_flag=
